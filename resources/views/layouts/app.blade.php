@@ -6,14 +6,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>@yield('title', 'Deliss Gift Shop')</title>
-  <style>
-  </style>
+  @stack('scripts')
+  @yield('styles')
 </head>
 <body>
-    <main class="content">
-        <header>
-            @include('component.header')
-        </header>
+    <header>
+        @include('component.header')
+    </header>
+    
+    <main>
         @yield('content')
     </main>
 

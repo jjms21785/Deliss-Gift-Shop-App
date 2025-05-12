@@ -1,5 +1,5 @@
 <!-- 
-Use this when you create a page. 
+Copy and use this when you create a page. 
 Change file name according to your assigned page 
 -->
 
@@ -7,6 +7,7 @@ Change file name according to your assigned page
 
 @section('title', 'Welcome')
 
+@section('styles')
 <style>
     * {
     box-sizing: border-box;
@@ -17,9 +18,19 @@ Change file name according to your assigned page
 /* Put your css here*/
 
 </style>
+@endsection
 
 @section('content')
 
 <!-- Put html body here -->
 
 @endsection
+
+
+@push('scripts')
+  <script>
+    
+    // Put your html script here
+
+  </script>
+@endpush
