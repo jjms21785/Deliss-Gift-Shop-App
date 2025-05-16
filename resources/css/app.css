@@ -12,3 +12,105 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-SemiBold.woff') format('woff'), 
+        url('../fonts/Hellix-SemiBold.woff2') format('woff2');
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-BlackItalic.woff') format('woff'), 
+        url('../fonts/Hellix-BlackItalic.woff2') format('woff2');
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-ExtraBold.woff') format('woff'), 
+        url('../fonts/Hellix-ExtraBold.woff2') format('woff2');
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-ExtraBoldItalic.woff') format('woff'), 
+        url('../fonts/Hellix-ExtraBoldItalic.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-Light.woff') format('woff'), 
+        url('../fonts/Hellix-Light.woff2') format('woff2');
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-LightItalic.woff') format('woff'), 
+        url('../fonts/Hellix-LightItalic.woff2') format('woff2');
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-Medium.woff') format('woff'), 
+        url('../fonts/Hellix-Medium.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-MediumItalic.woff') format('woff'), 
+        url('../fonts/Hellix-MediumItalic.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-Regular.woff') format('woff'), 
+        url('../fonts/Hellix-Regular.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-RegularItalic.woff') format('woff'), 
+        url('../fonts/Hellix-RegularItalic.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-SemiBold.woff') format('woff'), 
+        url('../fonts/Hellix-SemiBold.woff2') format('woff2');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-SemiBoldItalic.woff') format('woff'), 
+        url('../fonts/Hellix-SemiBoldItalic.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-Thin.woff') format('woff'), 
+        url('../fonts/Hellix-Thin.woff2') format('woff2');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../fonts/Hellix-ThinItalic.woff') format('woff'), 
+        url('../fonts/Hellix-ThinItalic.woff2') format('woff2');
+    font-style: normal;
+}
