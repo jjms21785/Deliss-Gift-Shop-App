@@ -1,4 +1,3 @@
-<!-- No need to modify this or copy -->
  
 <style>
     .deliss-footer {
@@ -144,10 +143,10 @@
             </ul>
             <h4>DELIVERY ACCEPTS</h4>
             <div class="payment-icons">
-                <img src="{{ asset('storage/icons/gcash-icon.png') }}" alt="gcash">
-                <img src="{{ asset('storage/icons/maya-icon.png') }}" alt="maya">
-                <img src="{{ asset('storage/icons/paypal-icon.png') }}" alt="paypal">
-                <img src="{{ asset('storage/icons/cod-icon.png') }}" alt="cod">
+                <img src="{{ asset('icons/gcash-icon.png') }}" alt="gcash">
+                <img src="{{ asset('icons/maya-icon.png') }}" alt="maya">
+                <img src="{{ asset('icons/paypal-icon.png') }}" alt="paypal">
+                <img src="{{ asset('icons/cod-icon.png') }}" alt="cod">
             </div>
             </div>
         </div>
@@ -155,7 +154,7 @@
         <hr class="footer-divider"/>
 
         <div class="footer-bottom">
-            <img src="{{ asset('storage/images/laravel-logo-air.png') }}" alt="Laravel Logo" class="laravel-logo">
+            <img src="{{ asset('images/laravel-logo-air.png') }}" alt="Laravel Logo" class="laravel-logo">
             <p class="footer-note">
             This project was developed using the Laravel framework as part of our CS405 course, Open Source Programming with Frameworks. It serves as a practical exploration of modern web application development, focusing on MVC architecture, routing, templating with Blade, database integration via ******, and ***** design. By leveraging Laravel’s robust features and ecosystem, this project deepens our understanding of scalable, maintainable, and secure back-end development practices within an open-source environment.
             </p>

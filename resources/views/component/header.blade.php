@@ -1,8 +1,3 @@
-<!-- 
-NOTE: 
-Modify this header according to your assigned page.
-Para to sa Login/Register nakahiwalay lang para madali makita at makopya. 
- -->
 
 <style>
     .top-bar {
@@ -60,11 +55,11 @@ Para to sa Login/Register nakahiwalay lang para madali makita at makopya.
     <div class="logo">Deliss</div>
     <div class="top-items">
       <div class="user-btn">
-        <img src="{{ asset('storage/icons/user-icon.png') }}" alt="user">
+        <img src="{{ asset('icons/user-icon.png') }}" alt="user">
         <p>Welcome</p>
       </div>
       <div class="cart">
-        <img src="{{ asset('storage/icons/cart-icon.png') }}" alt="cart">
+        <img src="{{ asset('icons/cart-icon.png') }}" alt="cart">
         <span class="cart-counter">+</span>
       </div>
     </div>

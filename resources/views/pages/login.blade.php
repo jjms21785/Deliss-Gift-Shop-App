@@ -1,6 +1,6 @@
 @extends('layouts.login-register')
 
-@section('title', 'Register')
+@section('title', 'Login')
 
 @section('styles')
 <style>
@@ -17,7 +17,6 @@
     color: #fff;
   }
 
-  /* Layout */
   .container {
     display: flex;
     justify-content: center;
@@ -29,17 +28,14 @@
     text-align: center;
     border-radius: 30px;
     overflow: hidden;
-    width: 100%;
-    max-width: 1000px;
   }
 
   .register-left,
   .register-right {
     flex: 1;
-    padding: 50px 5px 25px;
+    padding: 50px 5px 50px;
   }
 
-  /* Left Section */
   .register-left {
     background: #1c1c1c;
   }
@@ -52,17 +48,16 @@
 
   .form-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     background: #1c1c1c;
     padding: 30px;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
   }
 
-  .form-grid input,
-  .form-grid textarea {
+  .form-grid input {
     width: 100%;
     padding: 12px;
     font-size: 14px;
@@ -87,31 +82,20 @@
     cursor: pointer;
   }
 
-  textarea {
-    resize: none;
-    height: 100%;
-    min-height: 100px;
-    grid-column: 2;
-    grid-row: 1 / span 3;
-  }
-
-  .terms {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+  .forgot {
     font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
   }
 
-  .terms a {
-    color: #fff;
+  .forgot a {
+    color: white;
     text-decoration: underline;
     font-weight: bold;
   }
 
   .create-btn {
-    margin: 30px auto;
+    margin: auto;
     padding: 15px 30px;
     font-size: 19px;
     font-weight: bold;
@@ -122,12 +106,11 @@
     cursor: pointer;
   }
 
-  /* Right Section */
   .register-right {
-    background: #f2f2f2;
+    background: #FFFFFF;
     text-align: center;
     justify-content: center;
-    max-width: 350px;
+    max-width: 450px;
   }
 
   .register-top h2 {
@@ -136,7 +119,7 @@
   }
 
   .register-tagline {
-    width: 300px;
+    width: 330px;
     margin-bottom: -30px;
     font-size: 12px;
     text-align: right;
@@ -151,18 +134,18 @@
   }
 
   .register-deliss-note {
-    width: 70%;
+    width: 80%;
     margin: 15px auto 5px;
     font-size: 12px;
     color: black;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 1.8;
   }
 
   .login-btn {
-    width: 175px;
+    width: 150px;
     margin: 20px auto 40px;
-    padding: 15px 25px;
+    padding: 10px;
     font-size: 19px;
     font-weight: bold;
     background: white;
@@ -172,46 +155,40 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   }
 
-  .register-bottom {
-    width: 80px;
-    margin: -10px auto 0;
-    font-size: 12px;
-    color: black;
-    background: #f2f2f2;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
 
   .social-login {
+    width: 80%;
+    margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     margin-top: 10px;
+  }
+  .social-login img {
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+  }
+
+  .follow-us {
+    color: black;
+    font-size: 11px;
   }
 
   .facebook-btn,
-  .google-btn {
+  .insta-btn,
+  .tiktok-btn {
     width: 125px;
-    padding: 8px 20px;
-    font-size: 19px;
+    padding: 5px;
+    text-align: left;
+    font-size: 15px;
     font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  .facebook-btn {
-    color: white;
-    background: #1876EF;
-  }
-
-  .google-btn {
     color: rgb(100, 100, 100);
+    background: none;
+    border: none;
+    cursor: pointer;
   }
+
 </style>
 @endsection
 
@@ -219,24 +196,20 @@
 <main class="container">
   <div class="register-box">
     <div class="register-left">
-      <h2>SIGN UP</h2>
-      <form>
+      <h2>LOGIN</h2>
+      <form method="POST" action="">
+        @csrf
         <div class="form-grid">
-          <input type="email" placeholder="Email">
-          <input type="text" placeholder="Username">
-          <input type="text" placeholder="Contact Number">
+          <input type="text" name="username" placeholder="Username" required>
           <div class="password-wrapper">
-            <input type="password" placeholder="Password">
-            <span class="eye-icon"></span>
+            <input type="password" name="password" placeholder="Password" required>
+            <span class="eye-icon">👁️</span>
           </div>
-          <input type="password" placeholder="Confirm Password">
-          <textarea placeholder="Address"></textarea>
+          <div class="forgot">
+            <p>DID YOU FORGOT YOUR PASSWORD? <a href="">CLICK HERE</a></p>
+          </div>
         </div>
-        <div class="terms">
-          <input type="checkbox" id="terms" required />
-          <label for="terms">ACCEPT THE <a href="#">TERMS & CONDITIONS</a></label>
-        </div>
-        <button type="submit" class="create-btn">CREATE</button>
+        <button type="submit" class="create-btn">LOGIN</button>
       </form>
     </div>
 
@@ -249,15 +222,20 @@
         <p class="register-deliss-note">
           USE AN ACCOUNT TO KEEP YOUR ORDERS ON TRACK AND SAFE 
           <br>
-          ALREADY HAVE AN ACCOUNT? LOGIN NOW!
+          DON'T HAVE AN ACCOUNT YET?
         </p>
       </div>
-      <button class="login-btn">LOGIN</button>
-      <hr />
-      <p class="register-bottom">OR USE</p>
+      <a href="">
+        <button class="login-btn">SIGN UP</button>
+      </a>
+      <p class="follow-us">TO KEEP UPDATED, FOLLOW OUR SOCIALS!</p>
       <div class="social-login">
+        <img src="{{ asset('icons/fb-icon.png') }}" alt="facebook">
         <button class="facebook-btn">facebook</button>
-        <button class="google-btn">google</button>
+        <img src="{{ asset('icons/ig-icon.png') }}" alt="instagram">
+        <button class="insta-btn">instagram</button>
+        <img src="{{ asset('icons/tiktok-icon.png') }}" alt="tiktok">
+        <button class="tiktok-btn">tiktok</button>
       </div>
     </div>
   </div>
