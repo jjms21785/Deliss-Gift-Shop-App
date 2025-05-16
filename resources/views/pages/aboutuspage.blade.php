@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
 </head>
-<body class="font-[Montserrat] text-gray-800 bg-white">
+<body class="font-helix">
 
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow">
@@ -106,8 +106,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-20">
-        @include('components.footer')
-    </footer>
+    <footer class="text-white pt-10 pb-6 px-8 font-sans" style="background-color: #1E1E1E;">
+        <div class="container mx-auto">
+            @include('components.footer')
+        </div>
 </body>
 </html>

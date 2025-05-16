@@ -38,18 +38,10 @@
                 <div class="mt-8">
                     <h4 class="text-base font-medium mb-3 uppercase">Delivery Accepts</h4>
                     <div class="flex space-x-2">
-                        <div class="bg-white rounded-md p-1 w-10 h-7 flex items-center justify-center">
-                            <img src="/placeholder.svg?height=20&width=20" alt="Payment method" class="max-h-5">
-                        </div>
-                        <div class="bg-white rounded-md p-1 w-10 h-7 flex items-center justify-center">
-                            <img src="/placeholder.svg?height=20&width=20" alt="Payment method" class="max-h-5">
-                        </div>
-                        <div class="bg-white rounded-md p-1 w-10 h-7 flex items-center justify-center">
-                            <img src="/placeholder.svg?height=20&width=20" alt="Payment method" class="max-h-5">
-                        </div>
-                        <div class="bg-white rounded-md p-1 w-10 h-7 flex items-center justify-center">
-                            <img src="/placeholder.svg?height=20&width=20" alt="Payment method" class="max-h-5">
-                        </div>
+                        <img src="{{ asset('images/webpages/gcash-logo.svg') }}" class="w-15 h-9" alt="Gcash logo" />
+                        <img src="{{ asset('images/webpages/maya-logo.svg') }}" class="w-15 h-9" alt="Paymaya logo" />
+                        <img src="{{ asset('images/webpages/paypal-logo.svg') }}" class="w-15 h-9" alt="Paypal logo" />
+                        <img src="{{ asset('images/webpages/cod-logo.svg') }}" class="w-15 h-9" alt="Cash on Delivery logo" />
                     </div>
                 </div>
             </div>
@@ -57,9 +49,9 @@
         
         <div class="mt-12 pt-6 border-t border-gray-800 text-center">
             <div class="flex justify-center mb-4">
-                <img src="/placeholder.svg?height=60&width=180" alt="Laravel" class="h-16">
+                <img src="{{ asset('images/webpages/laravel-logo.svg') }}" alt="Laravel" class="h-120">
             </div>
-            <p class="text-gray-400 text-xs leading-relaxed max-w-4xl mx-auto">
+            <p class="text-gray-400 text-s leading-relaxed max-w-5xl mx-auto">
                 This project was developed using the Laravel framework as part of our CS405 course, Open Source Programming with Frameworks. It serves as a practical exploration of modern web application development, focusing on MVC architecture, routing, templating with Blade, database integration via *****, and ***** design. By leveraging Laravel's robust features and ecosystem, this project deepens our understanding of scalable, maintainable, and secure back-end development practices within an open-source environment.
             </p>
         </div>
