@@ -51,6 +51,7 @@
     </div>
 
     <!-- Featured Products Section -->
+     
     
 </main>
 
