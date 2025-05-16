@@ -16,8 +16,13 @@ Route::get('/aboutus', function () {
 })->name('aboutus');
 
 Route::get('/login', function () {
-    return view('auth.login');
+    return view('pages.login');
 })->name('login');
+
+Route::get('/register', function () {
+    return view('pages.register');
+})->name('register');
+
 
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
