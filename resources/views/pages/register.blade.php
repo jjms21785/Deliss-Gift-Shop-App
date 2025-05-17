@@ -14,13 +14,14 @@
   </div>
 
   <!-- Foreground Content -->
-  <main class="relative z-10 w-full max-w-[1000px] flex rounded-[30px] overflow-hidden">
+  <main class="relative z-10 w-full max-w-[1000px] flex rounded-[30px] mt-[-95px] overflow-hidden">
     <!-- Left Section -->
-    <div class="flex-1 bg-[#1c1c1c] p-12 text-center">
-      <h2 class="text-[82px] font-extrabold text-pink-500 mb-8">SIGN UP</h2>
+    <div class="flex-1 bg-[#1c1c1c] pt-6 pb-6 text-center">
+      <h2 class="text-[82px] font-extrabold text-rose-300">SIGN UP</h2>
       <form>
         <div class="grid grid-cols-2 gap-5 bg-[#1c1c1c] p-8 rounded-lg max-w-[800px] mx-auto">
           <input type="email" placeholder="Email" class="w-full p-3 rounded-lg text-sm bg-white text-black" />
+          <textarea placeholder="Address" class="col-span-1 row-span-3 w-full min-h-[100px] p-3 rounded-lg text-sm resize-none bg-white text-black"></textarea>
           <input type="text" placeholder="Username" class="w-full p-3 rounded-lg text-sm bg-white text-black" />
           <input type="text" placeholder="Contact Number" class="w-full p-3 rounded-lg text-sm bg-white text-black" />
           <div class="relative flex items-center">
@@ -30,7 +31,6 @@
             </span>
           </div>
           <input type="password" placeholder="Confirm Password" class="w-full p-3 rounded-lg text-sm bg-white text-black" />
-          <textarea placeholder="Address" class="col-span-1 row-span-3 w-full min-h-[100px] p-3 rounded-lg text-sm resize-none bg-white text-black"></textarea>
         </div>
         <div class="flex justify-center items-center gap-2 text-xs mt-5 text-white">
           <input type="checkbox" id="terms" required class="w-4 h-4" />
@@ -48,17 +48,17 @@
     <div class="flex-1 max-w-[350px] bg-gray-100 text-center p-8 flex flex-col justify-center">
       <div>
         <p class="text-right text-xs mb-[-30px] text-black">EST 2025</p>
-        <h2 class="text-[92px] font-extrabold text-pink-500">Deliss</h2>
+        <h2 class="text-[92px] font-extrabold text-rose-300">Deliss</h2>
         <p class="text-xs text-black tracking-wide mb-5">WHERE ELEGANCE MEETS SWEETNESS</p>
         <hr class="border-black mb-5" />
         <p class="w-[70%] mx-auto mb-4 text-xs text-black tracking-widest leading-relaxed">
-          USE AN ACCOUNT TO KEEP YOUR ORDERS ON TRACK AND SAFE <br />
+          USE AN ACCOUNT TO KEEP YOUR ORDERS ON TRACK AND SAFE <br /><br />
           ALREADY HAVE AN ACCOUNT? LOGIN NOW!
         </p>
       </div>
 
       <a href="{{ route('login') }}">
-        <button class="mx-auto w-[175px] py-4 px-6 text-lg font-bold bg-white rounded-[30px] shadow-lg cursor-pointer mb-5">
+        <button class="mx-auto w-[175px] py-4 px-6 text-lg font-bold bg-white rounded-[30px] shadow-[0_0_10px_rgba(0,0,0,0.3)] cursor-pointer mb-5">
           LOGIN
         </button>
       </a>
@@ -67,10 +67,10 @@
       <p class="text-xs text-black mb-3">OR USE</p>
 
       <div class="flex flex-col items-center gap-3">
-        <button class="w-[125px] py-2 px-5 text-lg font-bold text-white bg-[#1876EF] rounded-lg shadow-lg cursor-pointer">
+        <button class="w-[125px] py-2 px-5 text-lg font-bold text-white bg-[#1876EF] rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.3)] cursor-pointer">
           facebook
         </button>
-        <button class="w-[125px] py-2 px-5 text-lg font-bold text-gray-600 bg-gray-200 rounded-lg shadow-lg cursor-pointer">
+        <button class="w-[125px] py-2 px-5 text-lg font-bold text-gray-600 bg-gray-200 rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.3)] cursor-pointer">
           google
         </button>
       </div>
